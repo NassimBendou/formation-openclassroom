@@ -15,7 +15,7 @@ export class AppComponent {
                 +"erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria"
                 +"excellens de amicitia loquetur.",
       loveIts: 0,
-      created_at: new Date()
+      created_at: new Date("2019-12-16T01:00:00")
   },
   {
       title: "Mon deuxième post",
@@ -23,8 +23,16 @@ export class AppComponent {
                 +"erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria"
                 +"excellens de amicitia loquetur.",
       loveIts: 0,
-      created_at: new Date()
-  }
+      created_at: new Date("2019-12-10T01:00:00")
+  },
+    {
+        title: "Mon troisième post",
+        content: "Sed ut tum ad senem senex de senectute, sic hoc libro ad amicum amicissimus scripsi de amicitia. Tum est Cato locutus, quo"
+                  +"erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria"
+                  +"excellens de amicitia loquetur.",
+        loveIts: 0,
+        created_at: new Date("2019-12-10T01:00:00")
+    }
   ]
 
 }
