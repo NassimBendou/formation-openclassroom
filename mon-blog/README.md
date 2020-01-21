@@ -4,11 +4,11 @@
 
 ## Ajout des posts
 
- - [ ] créer un service qui stockera l'array des posts et pourra les émettre sous forme de Subject
- - [ ] Le service permettra également l'ajout d'un nouveau post 
- - [ ] La suppression d'un post existant.
+ - [x] créer un service qui stockera l'array des posts et pourra les émettre sous forme de Subject
+ - [x] Le service permettra également l'ajout d'un nouveau post 
+ - [x] La suppression d'un post existant.
  
- - [ ] Intégrer un bouton Supprimer postsur chaque  PostListItemComponent 
+ - [x] Intégrer un bouton Supprimer postsur chaque  PostListItemComponent 
 
 
  - [ ] Créer un nouveau component,  NewPostComponent , qui comportera un formulaire (méthode template ou réactive, au choix) qui permettra à l'utilisateur d'entrer :
