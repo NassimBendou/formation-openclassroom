@@ -1,27 +1,22 @@
 # MonBlog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Ajout des posts
 
-## Code scaffolding
+ - [ ] créer un service qui stockera l'array des posts et pourra les émettre sous forme de Subject
+ - [ ] Le service permettra également l'ajout d'un nouveau post 
+ - [ ] La suppression d'un post existant.
+ 
+ - [ ] Intégrer un bouton Supprimer postsur chaque  PostListItemComponent 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+ - [ ] Créer un nouveau component,  NewPostComponent , qui comportera un formulaire (méthode template ou réactive, au choix) qui permettra à l'utilisateur d'entrer :
+    1. le titre
+    2. le contenu d'un nouveau post
+  
+ - [ ] Ce nouveau post sera ensuite créé et ajouté au service, et l'utilisateur sera redirigé vers la liste des posts.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ - [ ] Intégrer un menu de navigation en haut (avec le routing correspondant), permettant de naviguer vers la liste des posts (  /posts  ) et vers le formulaire (  /new  ) (le path vide sera redirigé vers le path  /posts  ) — le lien du menu correspondant à la route active comportera la classe  active.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - [ ] Faire en sorte que le changement du nombre de loveIts soit enregistré dans le service.
