@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Subject }  from 'rxjs/subject';
 
+import { Post } from '../model/post.model';
+
 @Injectable()
 export class PostService {
 
@@ -13,8 +15,8 @@ export class PostService {
         content: "Sed ut tum ad senem senex de senectute, sic hoc libro ad amicum amicissimus scripsi de amicitia. Tum est Cato locutus, quo"
                   +"erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria"
                   +"excellens de amicitia loquetur.",
-        loveIts: 0,
-        created_at: new Date("2019-12-16T01:00:00")
+        loveIt: 0,
+        createdAt: new Date("2019-12-16T01:00:00")
     },
     {
         id : 2,
@@ -22,8 +24,8 @@ export class PostService {
         content: "Sed ut tum ad senem senex de senectute, sic hoc libro ad amicum amicissimus scripsi de amicitia. Tum est Cato locutus, quo"
                   +"erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria"
                   +"excellens de amicitia loquetur.",
-        loveIts: 0,
-        created_at: new Date("2019-12-10T01:00:00")
+        loveIt: 0,
+        createdAt: new Date("2019-12-10T01:00:00")
     },
       {
           id : 3,
@@ -31,8 +33,8 @@ export class PostService {
           content: "Sed ut tum ad senem senex de senectute, sic hoc libro ad amicum amicissimus scripsi de amicitia. Tum est Cato locutus, quo"
                     +"erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria"
                     +"excellens de amicitia loquetur.",
-          loveIts: 0,
-          created_at: new Date("2019-12-10T01:00:00")
+          loveIt: 0,
+          createdAt: new Date("2019-12-10T01:00:00")
       }
     ];
 
@@ -43,19 +45,10 @@ export class PostService {
     this.postsSubject.next(this.posts.slice());
   }
 
-  addPost(title : string, content : string)
+  addPost(newPost :Post)
   {
-      const postObject = {
-        id : 0,
-        title: '',
-        content: '',
-        loveIts :0,
-        created_at : new Date()
-      };
-      postObject.title = title;
-      postObject.content = content;
-      postObject.id = this.posts[(this.posts.length - 1)].id + 1;
-      this.posts.push(postObject);
+      newPost.id = this.posts[(this.posts.length - 1)].id + 1;
+      this.posts.push(newPost);
 
       this.emitPostSubject();
   }
