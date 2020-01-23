@@ -65,5 +65,27 @@ export class PostService {
      this.emitPostSubject();
   }
 
+  loveIt(id:number)
+  {
+      var post = this.findPostById(id);
+      post.loveIt++;
+      this.emitPostSubject();
+  }
+
+  dontLoveIt(id:number)
+  {
+      var post = this.findPostById(id);
+      post.loveIt--;
+      this.emitPostSubject();
+  }
+
+  private findPostById(id:number)
+  {
+      return this.posts.find(
+             (post) => {
+               return post.id === id;
+             }
+           );
+  }
 
 }

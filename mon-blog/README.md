@@ -19,4 +19,4 @@
 
  - [x] Intégrer un menu de navigation en haut (avec le routing correspondant), permettant de naviguer vers la liste des posts (  /posts  ) et vers le formulaire (  /new  ) (le path vide sera redirigé vers le path  /posts  ) — le lien du menu correspondant à la route active comportera la classe  active.
 
- - [ ] Faire en sorte que le changement du nombre de loveIts soit enregistré dans le service.
+ - [x] Faire en sorte que le changement du nombre de loveIts soit enregistré dans le service.
